@@ -1,4 +1,4 @@
-require "plugins"
-require "editor"
-require "config"
-require "keybindings"
+require("plugins")
+require("editor")
+require("config")
+require("keybindings")

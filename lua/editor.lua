@@ -1,4 +1,4 @@
-vim.cmd "set number" -- Line numbers are good
+vim.cmd("set number") -- Line numbers are good
 vim.o.cursorline = false -- Highlight the line the cursor is on
 vim.o.colorcolumn = "99" -- Highlight the character limit
 vim.o.backspace = "indent,eol,start" -- Allow backspace in insert mode
@@ -17,18 +17,18 @@ vim.o.diffopt = "internal,filler,closeoff,vertical" -- prefer vertical diffs
 vim.o.shortmess = "OtI" -- disable start message
 
 -- colorscheme config
-vim.cmd "syntax on"
+vim.cmd("syntax on")
 vim.o.termguicolors = true
 vim.o.background = "dark"
-vim.cmd "colorscheme palenight"
+vim.cmd("colorscheme palenight")
 
 -- LaTeX config
 vim.o.grepprg = "grep -nH $*"
 vim.g.tex_flavor = "latex"
-vim.cmd "autocmd FileType tex setlocal wrap spell textwidth=99"
+vim.cmd("autocmd FileType tex setlocal wrap spell textwidth=99")
 
 -- no line numbers in terminal
-vim.cmd "autocmd TermOpen * setlocal nonumber"
+vim.cmd("autocmd TermOpen * setlocal nonumber")
 
 -- search settings
 vim.o.incsearch = true
@@ -50,8 +50,8 @@ vim.o.shiftwidth = 4
 vim.o.tabstop = 4
 vim.o.expandtab = false
 
-vim.cmd "filetype plugin on"
-vim.cmd "filetype indent on"
+vim.cmd("filetype plugin on")
+vim.cmd("filetype indent on")
 
 -- display tabs and trailing space visually
 vim.o.list = true
