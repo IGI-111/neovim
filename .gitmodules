@@ -1,9 +1,0 @@
-[submodule ".config/awesome/lain"]
-	path = .config/awesome/lain
-	url = https://github.com/copycat-killer/lain.git
-[submodule ".zprezto"]
-	path = .zprezto
-	url = https://github.com/sorin-ionescu/prezto.git
-[submodule ".nvim/bundle/vim-plug"]
-	path = .nvim/bundle/vim-plug
-	url = https://github.com/junegunn/vim-plug.git
