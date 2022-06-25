@@ -1,4 +1,4 @@
-require("config.compe")
+require("config.cmp")
 require("config.floaterm")
 require("config.formatter")
 require("config.lspconfig")
