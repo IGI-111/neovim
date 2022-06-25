@@ -3,7 +3,6 @@ return require("packer").startup(function()
 
 	-- Git integration
 	use("tpope/vim-fugitive")
-	use("nvim-lua/plenary.nvim")
 	use("lewis6991/gitsigns.nvim")
 
 	-- Snippets
@@ -29,11 +28,12 @@ return require("packer").startup(function()
 	-- Autocompletion
 	--     'zxqfl/tabnine-vim'
 	use("hrsh7th/nvim-cmp")
-	use('hrsh7th/cmp-nvim-lsp')
-	use('hrsh7th/cmp-buffer')
-	use('hrsh7th/cmp-path')
-	use('hrsh7th/cmp-cmdline')
+	use("hrsh7th/cmp-nvim-lsp")
+	use("hrsh7th/cmp-buffer")
+	use("hrsh7th/cmp-path")
+	use("hrsh7th/cmp-cmdline")
 	use("hrsh7th/cmp-vsnip")
+	use({ "tzachar/cmp-tabnine", run = "./install.sh", requires = "hrsh7th/nvim-cmp" })
 
 	-- Formatting
 	use("mhartington/formatter.nvim")

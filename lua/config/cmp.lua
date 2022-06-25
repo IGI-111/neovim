@@ -56,6 +56,7 @@ cmp.setup({
 		-- { name = 'luasnip' }, -- For luasnip users.
 		-- { name = 'ultisnips' }, -- For ultisnips users.
 		-- { name = 'snippy' }, -- For snippy users.
+		{ name = "cmp_tabnine" },
 	}, {
 		{ name = "buffer" },
 	}),
