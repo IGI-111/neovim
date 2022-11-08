@@ -55,7 +55,7 @@ return require("packer").startup(function()
 	-- Interface
 	use("lukas-reineke/indent-blankline.nvim")
 	use("simnalamburt/vim-mundo")
-	use("majutsushi/tagbar")
+	use('simrat39/symbols-outline.nvim')
 	use("hoob3rt/lualine.nvim")
 	use("kshenoy/vim-signature")
 	use("voldikss/vim-floaterm")
