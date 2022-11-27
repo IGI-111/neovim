@@ -33,7 +33,7 @@ return require("packer").startup(function()
 	use("hrsh7th/cmp-path")
 	use("hrsh7th/cmp-cmdline")
 	use("hrsh7th/cmp-vsnip")
-	use({ "tzachar/cmp-tabnine", run = "./install.sh", requires = "hrsh7th/nvim-cmp" })
+	-- use({ "tzachar/cmp-tabnine", run = "./install.sh", requires = "hrsh7th/nvim-cmp" })
 
 	-- Formatting
 	use("mhartington/formatter.nvim")
