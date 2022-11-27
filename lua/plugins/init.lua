@@ -43,7 +43,7 @@ return require("packer").startup(function()
 	use({
 		"neovim/nvim-lspconfig",
 		config = function()
-			require("./lspconfig")
+			require("plugins.lspconfig")
 		end,
 	})
 
@@ -134,6 +134,11 @@ return require("packer").startup(function()
 		"tamago324/lir.nvim",
 		config = function()
 			require("plugins.lir")
+		end,
+		init = function()
+			-- Disable netrw
+			vim.g.loaded_netrw = 1
+			vim.g.loaded_netrwPlugin = 1
 		end,
 	})
 	use({
