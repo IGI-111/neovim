@@ -1,5 +1,3 @@
--- FloatTerm config
---
 vim.g.floaterm_position = "center"
 vim.g.floaterm_borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" }
 

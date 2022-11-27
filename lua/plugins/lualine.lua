@@ -11,7 +11,16 @@ require("lualine").setup({
 		lualine_c = { "filename" },
 		lualine_x = { "encoding", "fileformat", "filetype" },
 		lualine_y = {
-			{ "diagnostics", sources = { "nvim_diagnostic", "coc", "ale" } },
+			{
+				"diagnostics",
+				sources = {
+					"nvim_lsp",
+					"nvim_diagnostic",
+					"nvim_workspace_diagnostic",
+					"coc",
+					"ale",
+				},
+			},
 			"progress",
 		},
 		lualine_z = { "location" },
@@ -21,7 +30,7 @@ require("lualine").setup({
 		lualine_b = {
 			{ "diagnostics", sources = { "nvim_diagnostic", "coc", "ale" } },
 		},
-		lualine_c = { "filename" },
+		lualine_c = { "filename", "lsp_progress" },
 		lualine_x = { "location" },
 		lualine_y = {},
 		lualine_z = {},

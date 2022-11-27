@@ -1,3 +1,13 @@
+vim.api.nvim_exec(
+	[[
+		augroup FormatAutogroup
+			autocmd!
+			autocmd BufWritePost *.tsx,*.ts,*.js,*.rs,*.lua,*.nix FormatWrite
+		augroup END
+	]],
+	true
+)
+
 require("formatter").setup({
 	logging = false,
 	filetype = {
@@ -63,12 +73,3 @@ require("formatter").setup({
 		},
 	},
 })
-vim.api.nvim_exec(
-	[[
-	augroup FormatAutogroup
-	autocmd!
-	autocmd BufWritePost *.tsx,*.ts,*.js,*.rs,*.lua,*.nix FormatWrite
-	augroup END
-	]],
-	true
-)

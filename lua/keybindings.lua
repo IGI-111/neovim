@@ -1,5 +1,4 @@
 vim.api.nvim_set_keymap("", "<Space>", "<Leader>", { noremap = false, silent = false })
-
 -- Hack to get C-h working in NeoVim
 vim.api.nvim_set_keymap("n", "<BS>", "<C-W>h", { noremap = false, silent = false })
 

@@ -56,7 +56,7 @@ cmp.setup({
 		-- { name = 'luasnip' }, -- For luasnip users.
 		-- { name = 'ultisnips' }, -- For ultisnips users.
 		-- { name = 'snippy' }, -- For snippy users.
-		{ name = "cmp_tabnine" },
+		-- { name = "cmp_tabnine" },
 	}, {
 		{ name = "buffer" },
 	}),
@@ -85,7 +85,9 @@ cmp.setup.cmdline(":", {
 	sources = cmp.config.sources({
 		{ name = "path" },
 	}, {
-		{ name = "cmdline" },
+		{ name = "cmdline", option = {
+			ignore_cmds = { "Man", "!" },
+		} },
 	}),
 })
 
