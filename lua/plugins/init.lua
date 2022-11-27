@@ -1,10 +1,3 @@
-vim.cmd([[
-	augroup packer_user_config
-		autocmd!
-		autocmd BufWritePost plugins.lua source <afile> | PackerCompile
-	augroup end
-]])
-
 return require("packer").startup(function()
 	use("wbthomason/packer.nvim")
 
@@ -135,11 +128,7 @@ return require("packer").startup(function()
 		config = function()
 			require("plugins.lir")
 		end,
-		init = function()
-			-- Disable netrw
-			vim.g.loaded_netrw = 1
-			vim.g.loaded_netrwPlugin = 1
-		end,
+		init = function() end,
 	})
 	use({
 		"folke/which-key.nvim",
@@ -147,7 +136,6 @@ return require("packer").startup(function()
 			require("which-key").setup({})
 		end,
 	})
-	use("WhoIsSethDaniel/lualine-lsp-progress.nvim")
 	use({
 		"j-hui/fidget.nvim",
 		requires = { "neovim/nvim-lspconfig" },
@@ -155,5 +143,5 @@ return require("packer").startup(function()
 			require("fidget").setup({})
 		end,
 	})
-	use("kyazdani42/nvim-web-devicons")
+	-- use("kyazdani42/nvim-web-devicons")
 end)

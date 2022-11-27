@@ -70,3 +70,7 @@ vim.o.foldenable = false --dont fold by default
 vim.o.scrolloff = 8 --Start scrolling when we're 8 lines away from margins
 vim.o.sidescrolloff = 15
 vim.o.sidescroll = 1
+
+-- disable netrw
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1

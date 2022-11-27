@@ -30,7 +30,7 @@ require("lualine").setup({
 		lualine_b = {
 			{ "diagnostics", sources = { "nvim_diagnostic", "coc", "ale" } },
 		},
-		lualine_c = { "filename", "lsp_progress" },
+		lualine_c = { "filename" },
 		lualine_x = { "location" },
 		lualine_y = {},
 		lualine_z = {},
