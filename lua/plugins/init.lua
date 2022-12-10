@@ -81,6 +81,7 @@ return require("packer").startup(function()
 			require("plugins.treesitter")
 		end,
 	})
+	use('nvim-treesitter/nvim-treesitter-textobjects')
 	use({
 		"p00f/nvim-ts-rainbow",
 		config = function()
@@ -129,12 +130,6 @@ return require("packer").startup(function()
 			require("plugins.lir")
 		end,
 		init = function() end,
-	})
-	use({
-		"folke/which-key.nvim",
-		config = function()
-			require("which-key").setup({})
-		end,
 	})
 	use({
 		"j-hui/fidget.nvim",
