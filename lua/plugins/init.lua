@@ -81,13 +81,22 @@ return require("packer").startup(function()
 			require("plugins.treesitter")
 		end,
 	})
-	use('nvim-treesitter/nvim-treesitter-textobjects')
+	use("nvim-treesitter/nvim-treesitter-textobjects")
 	use({
 		"p00f/nvim-ts-rainbow",
 		config = function()
 			require("plugins.treesitter_rainbow")
 		end,
 	})
+
+	-- Line
+	use({
+		"hoob3rt/lualine.nvim",
+		config = function()
+			require("plugins.lualine")
+		end,
+	})
+	use("arkav/lualine-lsp-progress")
 
 	-- Interface
 	use("lukas-reineke/indent-blankline.nvim")
@@ -101,12 +110,6 @@ return require("packer").startup(function()
 		"simrat39/symbols-outline.nvim",
 		config = function()
 			vim.api.nvim_set_keymap("n", "<Leader>o", ":SymbolsOutline<CR>", { noremap = true, silent = true })
-		end,
-	})
-	use({
-		"hoob3rt/lualine.nvim",
-		config = function()
-			require("plugins.lualine")
 		end,
 	})
 	use("kshenoy/vim-signature")
@@ -131,11 +134,17 @@ return require("packer").startup(function()
 		end,
 		init = function() end,
 	})
-	use({
+	--[[ use({
 		"j-hui/fidget.nvim",
 		requires = { "neovim/nvim-lspconfig" },
 		config = function()
 			require("fidget").setup({})
+		end,
+	}) ]]
+	use({
+		"folke/twilight.nvim",
+		config = function()
+			require("twilight").setup({})
 		end,
 	})
 	-- use("kyazdani42/nvim-web-devicons")
